@@ -1,0 +1,76 @@
+*
+  box-sizing: border-box
+
+*:focus
+  outline: none
+
+body
+  font-family: 'Mulish', sans-serif
+  color: $text-color
+  background-color: $secondary-color
+
+.container
+  max-width: 1110px
+  margin: auto
+
+img
+  max-width: 100%
+
+.input
+  background-color: #fff
+  border-radius: 4px
+  border: none
+  padding: 0 23px
+  height: 50px
+
+.textarea
+  height: 123px
+  background-color: white
+  border-radius: 4px
+  padding: 18px 23px
+  border: none
+  resize: none
+
+.button
+  padding: 18px 65px
+  background-color: $primary-color
+  border: none
+  border-radius: 4px
+  font-weight: 700
+  font-size: 12px
+  line-height: 15px
+  color: $light
+  cursor: pointer
+  transition: 0.2s
+  &:hover
+    opacity: 0.6
+  &:active
+    color: $dark
+
+.search
+  &__button
+    &:hover
+      opacity: 0.6
+    &:active
+      background-color: $dark
+
+.packages-card__button, .card__button
+  &:hover
+    opacity: 0.6
+  &:active
+    color: $dark
+
+.subscribe
+  &__button
+    &:hover
+      opacity: 0.6
+    &:active
+      background-color: $dark
+
+.hotel-slider__button, .reviews-slider__button
+  &:hover
+    opacity: 0.6
+
+.error
+  color: $primary-color
+  font-size: 14px

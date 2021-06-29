@@ -1,0 +1,568 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .hotel
+    &-slider
+      width: 580px
+      &__image
+        height: 100%
+        object-fit: cover
+  .card
+    width: 220px
+    height: 220px
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(4, 1fr)
+    &-card
+      grid-column: span 2
+      &__main
+        grid-column: span 4
+
+@media (max-width: 1024px)
+  .container
+    max-width: 880px
+  .hotel
+    &-grid
+      flex-direction: column
+    &-slider
+      width: 100%
+      &__image
+        width: 100%
+        object-fit: cover
+    &__slider
+      margin-bottom: 30px
+    &-right
+      flex-direction: row
+  .booking
+    width: 100%
+    margin-right: 20px
+  .map
+    width: 100%
+  .activities
+    padding-bottom: 78px //уменьшаем на размер отступа карточек
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 48%
+    height: 255px
+  .footer
+    &__input
+      &-group
+        flex-basis: 100%
+
+@media (max-width: 992px)
+  .container, .newsletter-wrapper
+    max-width: 700px
+  .logo
+    width: 132px
+  .navbar
+    &-top
+      padding-top: 30px
+      padding-bottom: 30px
+    &-menu
+      justify-content: space-around
+      padding-top: 22px
+      padding-bottom: 22px
+      &__link
+        font-size: 12px
+        line-height: 15px
+        &:hover
+          color: $light
+        &:active
+          color: $light
+    &__search
+      margin-left: auto
+  .user
+    &__name
+      &:hover
+        color: $text-color
+      &:active
+        color: $text-color
+  .search
+    &__input
+      width: 340px
+  .hotel
+    &-right
+      justify-content: space-between
+  .booking
+    width: 340px
+  .map
+    width: 340px
+  .reviews
+    &-slider
+      &__item
+        max-width: 579px
+      &__text
+        max-width: 455px
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr 1fr 1fr minmax(202px, 1fr)
+      grid-auto-rows: min-content 50px min-content 62px min-content 38px min-content
+      column-gap: 0
+    &__logo
+      grid-row: 1 / 2
+    &__categories
+      grid-row: 3 / 4
+    &__additional
+      grid-row: 3 / 4
+      grid-column: 2 / 4
+      justify-self: center
+      padding-bottom: 0
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 3
+        align-self: center
+        margin-left: 30px
+    &__legal
+      grid-row: 3 / 4
+      grid-column: 4 / 5
+    &__contact
+      &-details
+        grid-row: 5 / 6
+        grid-column: span 4
+      &-form
+        grid-row: 7
+        grid-column: span 4
+        width: 76%
+    &__link
+      &:hover
+        color: $footer-color
+      &:active
+        color: $footer-color
+    &-service
+      margin-left: 0
+      &__link
+        &:hover
+          color: #ffffff
+      &__link
+        &:active
+          color: #ffffff
+    &__phone
+      &:hover
+        color: $footer-color
+      &:active
+        color: $footer-color
+    &__email
+      &:hover
+        color: $footer-color
+      &:active
+        color: $footer-color
+
+  .button
+    &:hover
+      opacity: 1
+    &:active
+      color: $light
+  .packages-card__button, .card__button
+    &:hover
+      opacity: 1
+    &:active
+      color: $light
+  .search__button
+    &:hover
+      opacity: 1
+    &:active
+      background-color: $primary-color
+  .subscribe__button
+    &:hover
+      opacity: 1
+    &:active
+      background-color: $primary-color
+  .hotel-slider__button, .reviews-slider__button
+    &:hover
+      opacity: 1
+
+@media (max-width: 910px)
+  .modal
+    &__dialog
+      padding: 33px 55px
+
+@media (max-width: 768px)
+  .container, .newsletter-wrapper
+    width: 91%
+  .navbar
+    &__search
+      margin-left: 47px
+  .hotel
+    padding-top: 23px
+    padding-bottom: 60px
+  .packages
+    &__title
+      margin-bottom: 50px
+      font-size: 30px
+    &__description
+      margin-bottom: 20px
+    &-card
+      &__main
+        &-info
+          padding-top: 30px
+        &-title
+          margin-bottom: 20px
+  .newsletter
+    &-title
+      margin-right: 20px
+  .reviews
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 50px
+      font-size: 30px
+  .activities
+    padding-bottom: 50px //уменьшаем на размер отступа карточек
+    &__card
+      margin-bottom: 20px
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &__logo
+      width: 104px
+      height: 108px
+    &__title
+      &--contact-margin
+        margin-bottom: 24px
+      &--message-margin
+        margin-bottom: 34px
+    &__input
+      &-group
+        flex-basis: 47%
+    &-service
+      margin-top: 56px
+  .modal
+    &__btn
+      flex-direction: column
+      align-items: flex-start
+    &__info
+      order: -1
+      margin-bottom: 15px
+
+@media (max-width: 730px)
+  body
+    padding-top: 70px
+  .navbar
+    &__mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__search, &__user
+      &--mobile
+        &--hidden
+          display: none
+    &__search
+      margin: 0
+      margin-bottom: 39px
+    &__user
+      flex-direction: column
+      justify-content: center
+      margin-bottom: 27px
+    &-bottom
+      display: none
+      &__mobile
+        &--visible
+          overflow: scroll
+          display: block
+          position: fixed
+          padding-top: 32px
+          left: 0
+          top: 70px
+          right: 0
+          bottom: 0
+    &-menu
+      flex-direction: column
+      padding-top: 0
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &--visible
+            display: block
+            margin-bottom: 0
+  .user
+    &__name
+      color: $light
+      padding: 0
+      padding-top: 10px
+      &:hover
+        color: $light
+      &:active
+        color: $light
+  .menu
+    &-button
+      width: 16px
+      height: 11px
+      padding: 0
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: space-between
+      border: none
+      background-color: white
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+  .hotel
+    padding-top: 0
+    &-wrapper
+      justify-content: space-between
+    &-name
+      flex-basis: 100%
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
+  .stars
+    flex-basis: auto
+  .packages
+    &-card
+      &__img
+        &-container
+          min-height: 500px
+  .reviews
+    &-slider
+      &__item
+        max-width: 500px
+      &__text
+        max-width: 376px
+
+  .modal
+    &__dialog
+      width: 55%
+      overflow-y: auto
+
+@media (max-width: 683px)
+  .packages
+    &-card
+      grid-column: span 4
+      &__info
+        padding: 30px
+      &__main
+        flex-direction: column
+        align-items: flex-start
+        &-image
+          height: 350px
+      &__img
+        &-container
+          width: 100%
+          flex-basis: 0
+          min-height: 350px
+  .newsletter
+    &-wrapper
+      flex-wrap: wrap
+    &-title
+      margin-bottom: 37px
+  .reviews
+    &-slider
+      &__button
+        top: 31px
+        &--prev
+          left: 25%
+          transform: translate(-100%, 0)
+        &--next
+          right: 25%
+          transform: translate(100%, 0)
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-auto-rows: min-content
+      row-gap: 30px
+    &__categories
+      grid-row: 4 / 5
+      grid-column: span 4
+    &__additional
+      grid-row: 3 / 4
+      grid-column: span 4
+      justify-self: start
+    &__legal
+      grid-row: 2 / 3
+      grid-column: span 4
+      justify-self: start
+    &__contact
+      &-details
+        grid-row: 5 / 6
+      &-form
+        grid-row: 6
+    &__input
+      &-group
+        flex-basis: 100%
+  .modal
+    &__dialog
+      width: 60%
+
+@media (max-width: 576px)
+  .navbar
+    &-top
+      padding-top: 28px
+      padding-bottom: 28px
+  .search
+    &__input
+      width: 100%
+  .logo
+    width: 99px
+  .hotel
+    &-slider
+      height: 351px
+      margin-bottom: 20px
+    &-right
+      flex-direction: column
+  .booking
+    width: 100%
+    //min-width: 280px
+    margin-bottom: 20px
+    margin-right: 0
+  .map
+    width: 100%
+    //min-width: 280px
+  .newsletter
+    padding: 76px 0 83px 0
+  .reviews
+    &-slider
+      &__item
+        width: 100%
+        &::after, &::before
+          display: none
+      &__text
+        width: 100%
+  .card
+    width: 100%
+    height: 286px
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1 / 2
+    &__social
+      &-network
+        grid-row: 2 / 3
+        margin-left: 0
+    &__legal
+      grid-row: 3 / 4
+    &__additional
+      grid-row: 4 / 5
+    &__categories
+      grid-row: 5 / 6
+    &__contact
+      &-details
+        grid-row: 6 / 7
+      &-form
+        grid-row: 7
+        width: 100%
+    &-service
+      flex-direction: column
+    &__payment
+      margin-top: 10px
+  .modal
+    &__dialog
+      width: 70%
+      padding: 33px 30px
+
+@media (max-width: 460px)
+  .hotel
+    padding-bottom: 40px
+    &-grid
+      margin-top: 18px
+    &-slider
+      height: 179px
+      &__button
+        width: 12px
+        height: 12px
+        background-size: 4px
+  .packages
+    padding-top: 20px
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 22px
+  .newsletter
+    &-title
+      font-size: 20px
+      &__strong
+        font-size: 30px
+  .reviews
+    padding-bottom: 50px
+    &-slider
+      &__item
+        padding: 0 29px 36px
+      &__text
+        text-align: left
+    &__title
+      margin-bottom: 42px
+      font-size: 18px
+      line-height: 23px
+  .activities
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 22px
+
+@media (max-width: 320px)
+  .container, .newsletter-wrapper
+    width: 88%
+  .map
+    height: 172px
+  .subscribe
+    width: 280px
+    &__input
+      padding-left: 20px
+  .activities
+    padding-top: 40px
+    padding-bottom: 40px //меньше чем в макете на размер отступа карточек
+  .card
+    height: 255px
+  .footer
+    &__logo
+      margin-bottom: 10px
+    &__social
+      &-network
+        flex-direction: column
+      &-links
+        justify-content: flex-start
+    &__link
+      margin-right: 10px
+    &__title
+      margin-bottom: 16px
+      &--inline
+        margin-bottom: 20px
+      &--contact
+        &-margin
+          margin-top: 10px
+          margin-bottom: 26px
+      &--message
+        &-margin
+          margin-top: 5px
+    &__icon
+      &-wrapper
+        margin-right: 7px
+    &__item
+      &--margin
+        margin-bottom: 21px
+    &__textarea
+      margin-bottom: 15px
+    &__btn
+      flex-direction: column
+      align-items: flex-start
+    &__info
+      order: -1
+      margin-bottom: 15px
+    &-service
+      margin-top: 25px
+      &__list
+        justify-content: space-between
+      &__item
+        margin-right: 5px
+        &:last-child
+          margin-right: 0
+  .modal
+    &__dialog
+      width: 90%
